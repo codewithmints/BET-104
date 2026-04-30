@@ -179,13 +179,16 @@ def run_main_workflow():
 
     # Output assembly
     final_df = pd.DataFrame(collected_data, columns=["pdb", "left_aa", "size_class", "angle"])
-    base_folder = os.path.dirname(save_path) or "."
-    os.makedirs(base_folder, exist_ok=True)
     
+    # Define results directory based on naming convention
+    results_folder = os.path.dirname(save_path) or "results"
+    os.makedirs(results_folder, exist_ok=True)
+    
+    # Save the main angle data
     final_df.to_csv(save_path, sep="\t", index=False)
 
-    # Save list of processed PDBs
-    pdb_log = os.path.join(base_folder, "pdbs.txt")
+    # Save list of processed PDBs as pdbs.txt to match the Snakefile
+    pdb_log = os.path.join(results_folder, "pdbs.txt")
     with open(pdb_log, "w") as log_file:
         for item in sorted(successful_pdbs):
             log_file.write(f"{item}\n")
