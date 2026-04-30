@@ -8,7 +8,7 @@ The following density plot illustrates the distribution of side-chain rotation a
 ![Side-Chain Angle Distribution](results/ss_profile_HHH_for_arg_with_valid_runs.png)
 
 ### Dataset Transparency
-A comprehensive list of the 50,000+ PDB structures that passed structural filters and contributed to the final calculation can be found here:
+A comprehensive list of the PDB structures that passed structural filters and contributed to the final calculation can be found here:
  [`results/pdbs.txt`](results/pdbs.txt)
 
 ---
