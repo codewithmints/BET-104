@@ -16,7 +16,7 @@ A comprehensive list of the 50,000+ PDB structures that passed structural filter
 
 ---
 
-## 🛠 Project Architecture
+## Project Architecture
 
 The pipeline is modularized into four core stages:
 1. **`pipeline.py`**: A high-speed parallel driver for initial structural parsing.
