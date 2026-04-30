@@ -1,7 +1,4 @@
-# Protein Side-Chain Angle Analysis Pipeline (BET-105)
-
-This repository contains a specialized bioinformatics pipeline designed to analyze the geometric orientations of amino acid side chains within helical structures. Specifically, it extracts triplet contexts, calculates rotation angles between side-chain centroids, and visualizes their distributions.
-
+# Protein Side-Chain Angle Analysis Pipeline (BET-104)
 ---
 
 ## Results Summary
