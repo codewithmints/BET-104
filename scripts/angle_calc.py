@@ -185,7 +185,7 @@ def run_main_workflow():
     final_df.to_csv(save_path, sep="\t", index=False)
 
     # Save list of processed PDBs
-    pdb_log = os.path.join(base_folder, "valid_pdbs.txt")
+    pdb_log = os.path.join(base_folder, "pdbs.txt")
     with open(pdb_log, "w") as log_file:
         for item in sorted(successful_pdbs):
             log_file.write(f"{item}\n")
